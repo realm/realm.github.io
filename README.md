@@ -4,6 +4,7 @@ Realm Open Source
 A simple, static portal which outlines our open source offerings. Intentionally
 themed to look like a merchant page on the directory.
 
+![screenshot](screenshot.png)
 
 Development
 -----------
