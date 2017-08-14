@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Custom Preset Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Custom-Preset-Copy" fill="#59569E">
+            <g id="whitepaper" transform="translate(-0.864915, -0.437898)">
+                <circle id="Oval" fill-opacity="0.1" cx="18.3649151" cy="17.9378981" r="17.5"></circle>
+                <path d="M19.6514066,13.7189491 C22.3797457,13.7189491 21.2243896,17.6514066 21.2243896,17.6514066 C21.2243896,17.6514066 25.1568472,16.3977391 25.1568472,19.2243896 L25.1568472,26.3028132 L15.7189491,26.3028132 L15.7189491,13.7189491 L19.6514066,13.7189491 Z M20.3018351,12.145966 L14.145966,12.145966 L14.145966,27.8757963 L26.7298302,27.8757963 L26.7298302,18.5621638 C26.7298302,16.6808761 22.7887212,12.145966 20.3018351,12.145966 Z M20.4378981,10.572983 L18.0784236,9 L11,9 L11,26.3028132 L12.572983,26.3028132 L12.572983,10.572983 L20.4378981,10.572983 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

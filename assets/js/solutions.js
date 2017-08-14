@@ -1,0 +1,1 @@
+$(document).ready(function(){$("ul.tabs li").click(function(){var t=$(this).attr("data-tab");$("ul.tabs li").removeClass("current"),$(".tab-content").removeClass("current"),$(this).addClass("current"),$("#"+t).addClass("current")}),smoothScroll.init({selector:'main a[href^="#"]',selectorHeader:null,speed:500,easing:"easeInOutCubic",offset:0,callback:function(){}})});

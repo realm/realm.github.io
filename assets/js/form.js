@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".js-webinar-form").validate()});

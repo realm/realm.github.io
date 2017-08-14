@@ -1,0 +1,295 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/* line 2, ../atomic/objects/_cari.scss */
+.logo-nascar {
+  margin: 3rem 0; }
+  /* line 4, ../atomic/objects/_cari.scss */
+  .logo-nascar .title {
+    color: #1C233F;
+    opacity: .5;
+    margin-top: 3rem; }
+  /* line 9, ../atomic/objects/_cari.scss */
+  .logo-nascar .header {
+    padding: 3rem 0; }
+  /* line 12, ../atomic/objects/_cari.scss */
+  .logo-nascar .sidebar-logos {
+    padding: 0; }
+  /* line 15, ../atomic/objects/_cari.scss */
+  .logo-nascar .testimonials {
+    min-height: 19.85em;
+    border: 1px solid #EBEBF2;
+    border-radius: 6px; }
+    /* line 20, ../atomic/objects/_cari.scss */
+    .logo-nascar .testimonials .testimonial-author .name {
+      color: #9A9BA5; }
+    /* line 23, ../atomic/objects/_cari.scss */
+    .logo-nascar .testimonials .testimonial-author .title {
+      opacity: .5; }
+    /* line 27, ../atomic/objects/_cari.scss */
+    .logo-nascar .testimonials p {
+      line-height: 1.3; }
+    /* line 30, ../atomic/objects/_cari.scss */
+    .logo-nascar .testimonials img.avatar, .logo-nascar .testimonials .social-icon img {
+      height: 45px;
+      width: 45px;
+      border-radius: 5rem;
+      overflow: hidden; }
+    /* line 36, ../atomic/objects/_cari.scss */
+    .logo-nascar .testimonials .social-icon img {
+      border-radius: 0;
+      width: initial;
+      height: 20px; }
+    /* line 41, ../atomic/objects/_cari.scss */
+    .logo-nascar .testimonials .card {
+      padding: 15px;
+      margin: 15px 0; }
+      @media (min-width: 768px) {
+        /* line 41, ../atomic/objects/_cari.scss */
+        .logo-nascar .testimonials .card {
+          min-height: 20rem; } }
+  /* line 49, ../atomic/objects/_cari.scss */
+  .logo-nascar .carousel {
+    min-height: 19.85em;
+    padding-bottom: 25px; }
+    /* line 52, ../atomic/objects/_cari.scss */
+    .logo-nascar .carousel .carousel-inner {
+      min-height: 19.85em; }
+      /* line 54, ../atomic/objects/_cari.scss */
+      .logo-nascar .carousel .carousel-inner .item {
+        min-height: 19.85em;
+        padding-bottom: 50px; }
+        @media (max-width: 768px) {
+          /* line 54, ../atomic/objects/_cari.scss */
+          .logo-nascar .carousel .carousel-inner .item {
+            min-height: 25rem; } }
+    /* line 62, ../atomic/objects/_cari.scss */
+    .logo-nascar .carousel .avatar {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin: 20px 0; }
+    /* line 68, ../atomic/objects/_cari.scss */
+    .logo-nascar .carousel .item.active {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    /* line 86, ../atomic/objects/_cari.scss */
+    .logo-nascar .carousel .item p {
+      color: #1C233F; }
+      @media (min-width: 768px) {
+        /* line 86, ../atomic/objects/_cari.scss */
+        .logo-nascar .carousel .item p {
+          font-size: 21px; } }
+    /* line 92, ../atomic/objects/_cari.scss */
+    .logo-nascar .carousel .item p.quote {
+      line-height: 2rem; }
+      /* line 94, ../atomic/objects/_cari.scss */
+      .logo-nascar .carousel .item p.quote:before, .logo-nascar .carousel .item p.quote:after {
+        color: #1C233F;
+        opacity: .25;
+        font-size: 2rem;
+        content: "  \0022  ";
+        font-style: italic; }
+    /* line 102, ../atomic/objects/_cari.scss */
+    .logo-nascar .carousel .carousel-caption {
+      padding: 0;
+      left: 0; }
+      /* line 105, ../atomic/objects/_cari.scss */
+      .logo-nascar .carousel .carousel-caption .title, .logo-nascar .carousel .carousel-caption .name {
+        text-shadow: none;
+        color: #1C233F;
+        font-size: 1rem; }
+      /* line 110, ../atomic/objects/_cari.scss */
+      .logo-nascar .carousel .carousel-caption .name {
+        margin: 0; }
+        @media (max-width: 768px) {
+          /* line 110, ../atomic/objects/_cari.scss */
+          .logo-nascar .carousel .carousel-caption .name {
+            font-size: 18px; } }
+      /* line 116, ../atomic/objects/_cari.scss */
+      .logo-nascar .carousel .carousel-caption .title {
+        opacity: .5;
+        margin: 0 0 15px 0; }
+        @media (max-width: 768px) {
+          /* line 116, ../atomic/objects/_cari.scss */
+          .logo-nascar .carousel .carousel-caption .title {
+            font-size: 15px; } }
+
+/* line 126, ../atomic/objects/_cari.scss */
+.carousel-indicators {
+  margin-bottom: 0;
+  bottom: 5px;
+  left: inherit;
+  z-index: 15;
+  width: calc(100% - 30px);
+  padding-left: 0;
+  margin-left: 0; }
+  @media (max-width: 768px) {
+    /* line 126, ../atomic/objects/_cari.scss */
+    .carousel-indicators {
+      bottom: 2px; } }
+  /* line 137, ../atomic/objects/_cari.scss */
+  .carousel-indicators li, .carousel-indicators .active li, .carousel-indicators .active {
+    background: #1C233F;
+    height: 5px;
+    opacity: .25;
+    flex: 1;
+    margin: 0 5px;
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all; }
+  /* line 146, ../atomic/objects/_cari.scss */
+  .carousel-indicators li, .carousel-indicators .active li {
+    border: none; }
+  /* line 149, ../atomic/objects/_cari.scss */
+  .carousel-indicators li.active {
+    opacity: 1; }
+
+/* line 5, product.scss */
+svg g {
+  max-width: 100vw; }
+
+/* line 8, product.scss */
+main {
+  margin-top: 0; }
+
+/* line 11, product.scss */
+.hero {
+  padding-top: 50px; }
+
+/* line 14, product.scss */
+nav.navtop {
+  display: none; }
+
+/* line 18, product.scss */
+.bindings a.btn-white {
+  margin: 0 5px;
+  color: #1C233F; }
+  /* line 21, product.scss */
+  .bindings a.btn-white i {
+    color: #9A50A5;
+    margin-right: 0.75rem; }
+  /* line 25, product.scss */
+  .bindings a.btn-white img {
+    max-width: 60px;
+    height: 30px; }
+@media (max-width: 768px) {
+  /* line 17, product.scss */
+  .bindings {
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    /* line 33, product.scss */
+    .bindings a.btn-white {
+      margin-bottom: 5px; } }
+
+/*------------------------------------*\
+    SECTIONS
+\*------------------------------------*/
+/* line 42, product.scss */
+section {
+  padding: 5rem 0;
+  border-bottom: 1px solid #EBEBF2; }
+
+/* line 46, product.scss */
+section:last-child {
+  border-bottom: none;
+  padding-bottom: 5rem; }
+
+/* line 50, product.scss */
+section.block-center {
+  padding-bottom: 10rem; }
+
+@media (max-width: 768px) {
+  /* line 54, product.scss */
+  section.block-webinar .btn-large {
+    margin: 2px 0; } }
+
+/* line 61, product.scss */
+section.block-intro img, section.block-features img {
+  margin: 15px 0; }
+/* line 64, product.scss */
+section.block-intro .feature-item, section.block-features .feature-item {
+  min-height: 22em; }
+
+/* line 69, product.scss */
+section.block-testimonials .card {
+  padding: 15px;
+  margin: 15px 0; }
+  @media (min-width: 768px) {
+    /* line 69, product.scss */
+    section.block-testimonials .card {
+      min-height: 20rem; } }
+
+/* line 77, product.scss */
+section.block-code-block .left, section.block-code-block .right {
+  margin-bottom: 3rem; }
+  /* line 79, product.scss */
+  section.block-code-block .left img, section.block-code-block .right img {
+    margin-bottom: 3rem; }
+  /* line 82, product.scss */
+  section.block-code-block .left p.light-text, section.block-code-block .right p.light-text {
+    margin: 0; }
+
+/* line 86, product.scss */
+section.block-code-block .left {
+  box-shadow: 1px 0 #EBEBF2; }
+
+@media (max-width: 768px) {
+  /* line 89, product.scss */
+  section.block-code-block .right {
+    margin: 15rem 0 0; } }
+
+/* line 95, product.scss */
+section.block-testimonials p {
+  line-height: 1.3; }
+/* line 98, product.scss */
+section.block-testimonials img.avatar, section.block-testimonials .social-icon img {
+  height: 45px;
+  width: 45px;
+  border-radius: 5rem;
+  overflow: hidden; }
+/* line 105, product.scss */
+section.block-testimonials img.avatar:before {
+  background: linear-gradient(rgba(255, 255, 255, 0.25), transparent); }
+/* line 110, product.scss */
+section.block-testimonials .social-icon img {
+  border-radius: 0;
+  width: initial;
+  height: 20px; }
+
+/* line 116, product.scss */
+.tip-section {
+  padding: 4em 0; }
+  @media (max-width: 768px) {
+    /* line 116, product.scss */
+    .tip-section {
+      padding: 1em 0; } }
+
+/* line 123, product.scss */
+section.block-center p {
+  opacity: .5; }
+
+/* line 128, product.scss */
+footer .topper {
+  width: 100%; }
+@media (max-width: 768px) {
+  /* line 131, product.scss */
+  footer .social {
+    display: block !important; } }
+@media (min-width: 768px) {
+  /* line 136, product.scss */
+  footer .sub-bar {
+    padding: 1rem 5rem 2rem; } }

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8>
+  <meta content="IE=edge,chrome=1" http-equiv=X-UA-Compatible>
+  <meta charset=utf-8>
+  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Realm Open Source </title>
+  <meta property="og:title" content="Realm Open Source " />
+  <meta property="twitter:title" content="Realm Open Source " />
+  <meta name=description content="At Realm, our mission is to help developers build better apps faster. We provide a unique set of tools and platform technologies designed to make it easy for developers to build apps. ">
+  <meta name="twitter:description" content="At Realm, our mission is to help developers build better apps faster. We provide a unique set of tools and platform technologies designed to make it easy for developers to build apps. ">
+  <meta name="og:description" content="At Realm, our mission is to help developers build better apps faster. We provide a unique set of tools and platform technologies designed to make it easy for developers to build apps. ">
+  <link rel=canonical href="https://realm.io/open-source/" />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel=stylesheet>
+  <meta name="twitter:site" content="@realm">
+  <meta name="twitter:creator" content="@realm">
+  <meta name=google-site-verification content=V61I6JaPDNM_SLXv4YaUU-madBffKP6UAAy5Brm6crg />
+  <meta name="twitter:card" content=summary>
+  <meta name="twitter:image" content="https://realm.io/assets/img/social/realmDark.jpg">
+  <meta property="og:image" content="https://realm.io/assets/img/social/realmDark.jpg" />
+  <meta property="og:type" content=Website />
+  <meta property="og:url" content="https://realm.io/open-source/" />
+  <link rel=icon href="assets/img/favicons/favicon.ico">
+  <link rel=apple-touch-icon-precomposed sizes=57x57 href="assets/img/favicons/favicon-57x57.png" />
+  <link rel=apple-touch-icon-precomposed sizes=114x114 href="assets/img/favicons/favicon-114x114.png" />
+  <link rel=apple-touch-icon-precomposed sizes=72x72 href="assets/img/favicons/favicon-72x72.png" />
+  <link rel=apple-touch-icon-precomposed sizes=144x144 href="assets/img/favicons/favicon-144x144.png" />
+  <link rel=apple-touch-icon-precomposed sizes=120x120 href="assets/img/favicons/favicon-120x120.png" />
+  <link rel=apple-touch-icon-precomposed sizes=152x152 href="assets/img/favicons/favicon-152x152.png" />
+  <link rel=icon type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes=32x32 />
+  <link rel=icon type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes=16x16 />
+  <meta name=application-name content="Realm is a mobile platform and a replacement for SQLite & Core Data. Build offline-first, reactive mobile experiences using simple data sync." />
+  <meta name=msapplication-TileColor content="#1C233F" />
+  <meta name=msapplication-TileImage content="assets/img/favicons/favicon-144x144.png" />
+  <meta name=msapplication-notification content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=https://realm.io/feed.xml&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=https://realm.io/feed.xml&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=https://realm.io/feed.xml&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=https://realm.io/feed.xml&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=https://realm.io/feed.xml&amp;id=5;cycle=1"
+  />
+  <link rel=alternate type="application/rss+xml" title="Realm News" href="https://feeds.feedburner.com/realmio" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.1.0.min.js"></script>
+  <script src="https://realm.io/assets/js/bootstrap.js"></script>
+  <link href="assets/css/vendors/bootstrap.css" rel=stylesheet />
+  <link href="assets/css/site.css" rel=stylesheet />
+  <link href="assets/css/pages/open-source.css" rel=stylesheet />
+  <script src="assets/js/home.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>
+  <script src="assets/js/realm.js"></script>
+  <script>
+    piAId = '211132';
+    piCId = '1214';
+
+    (function() {
+      function async_load() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+        var c = document.getElementsByTagName('script')[0];
+        c.parentNode.insertBefore(s, c);
+      }
+      if (window.attachEvent) {
+        window.attachEvent('onload', async_load);
+      } else {
+        window.addEventListener('load', async_load, false);
+      }
+    })();
+  </script>
+  <script>
+    setTimeout(function() {
+      var a = document.createElement("script");
+      var b = document.getElementsByTagName("script")[0];
+      a.src = document.location.protocol + "//script.crazyegg.com/pages/scripts/0066/1837.js?" + Math.floor(new Date().getTime() / 3600000);
+      a.async = true;
+      a.type = "text/javascript";
+      b.parentNode.insertBefore(a, b)
+    }, 1);
+  </script>
+  <script>
+    (function(e, a) {
+      if (!a.__SV) {
+        var b = window;
+        try {
+          var c, l, i, j = b.location,
+            g = j.hash;
+          c = function(a, b) {
+            return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null
+          };
+          g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search)))
+        } catch (m) {}
+        var k, h;
+        window.mixpanel = a;
+        a._i = [];
+        a.init = function(b, c, f) {
+          function e(b, a) {
+            var c = a.split(".");
+            2 == c.length && (b = b[c[0]], a = c[1]);
+            b[a] = function() {
+              b.push([a].concat(Array.prototype.slice.call(arguments,
+                0)))
+            }
+          }
+          var d = a;
+          "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel";
+          d.people = d.people || [];
+          d.toString = function(b) {
+            var a = "mixpanel";
+            "mixpanel" !== f && (a += "." + f);
+            b || (a += " (stub)");
+            return a
+          };
+          d.people.toString = function() {
+            return d.toString(1) + ".people (stub)"
+          };
+          k =
+            "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user"
+            .split(" ");
+          for (h = 0; h < k.length; h++) e(d, k[h]);
+          a._i.push([b, c, f])
+        };
+        a.__SV = 1.2;
+        b = e.createElement("script");
+        b.type = "text/javascript";
+        b.async = !0;
+        b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" :
+          "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+        c = e.getElementsByTagName("script")[0];
+        c.parentNode.insertBefore(b, c)
+      }
+    })(document, window.mixpanel || []);
+    mixpanel.init("449d47e4fac4e6b03a98df14b2aaf5c6");
+  </script>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NDCSRV');
+  </script>
+</head>
+
+<body class="open-source "> <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NDCSRV" height=0 width=0 style="display:none;visibility:hidden"></iframe></noscript>
+  <nav class="navbar navbar-default js-navbar white" role=navigation id=header>
+    <div class=col-xs-12>
+      <div class=navbar-header> <a class=navbar-brand href="https://realm.io/"><img class=logo src="https://realm.io/assets/svg/general_logo.svg"></a> </div>
+      <div class=pull-right>
+        <ul class="nav nav-pills">
+          <li id=nav-github-base><a href="https://github.com/realm">github.com/realm</a></li>
+          <li id=nav-github-demos><a href="https://github.com/realm-demos">github.com/realm-demos</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <nav class="navtop navbar navbar-default js-navbar white" role=navigation id=header>
+    <div class="row banner alert-banner js-banner js-top-banner" data-position=0 data-id="Webinar:Real-timeC" data-location=any data-page=any data-url="https://go.pardot.com/l/210132/2017-07-25/8vc26" data-text="Webinar: Real-time Content Updates in Your Mobile Apps. Claim Your Spot Now!">
+      <a href="https://go.pardot.com/l/210132/2017-07-25/8vc26" class="when col-xs-12 js-banner-text-container text-center"> <span class=js-banner-text>Webinar: Real-time Content Updates in Your Mobile Apps. Claim Your Spot Now!</span> </a> <span class="top-bar-close js-top-bar-close"><img src="https://realm.io/assets/svg/icons/close-icon.svg" alt=close /></span>      </div>
+    <div class="row top-banner js-top-banner"> <span class="col-xs-12 text-center success"> Success! </span> </div>
+    <div class=row>
+      <div class=col-xs-12>
+        <div class=navbar-header> <button type=button class="navbar-toggle collapsed visible-xs" data-toggle=modal data-target="#mobileModal"> <span>Menu</span> </button> <a class=navbar-brand href="https://realm.io/"><img class=logo src="https://realm.io/assets/svg/general_logo.svg"></a>          </div>
+        <div class="navbar-collapse collapse no-transition pull-right">
+          <ul class="nav nav-pills">
+            <li id=nav-products> <a href="#" class="dropdown-toggle nav-products" data-toggle=dropdown onclick="ga('send', 'event', 'Link', 'navbar-products', 'Nav');">Products<span class=caret></span></a>
+              <ul class=dropdown-menu role=menu>
+                <li><a href="https://realm.io/products/realm-mobile-platform">Realm Mobile Platform</a></li>
+                <li><a href="https://realm.io/products/realm-mobile-database">Realm Mobile Database</a></li>
+              </ul>
+            </li>
+            <li id=nav-pricing><a class=nav-pricing href="https://realm.io/pricing">Pricing</a></li>
+            <li id=nav-docs><a class=nav-docs href="https://realm.io/docs">Docs</a></li>
+            <li id=nav-support> <a href="#" class="dropdown-toggle nav-solutions" data-toggle=dropdown>Support<span class=caret></span></a>
+              <ul class=dropdown-menu role=menu>
+                <li><a href="https://realm.io/support">Overview</a></li>
+                <li><a class=nav-forums href="https://forums.realm.io">Forums</a></li>
+              </ul>
+            </li>
+            <li id=nav-blog><a class=nav-blog href="https://blog.realm.io">Blog</a></li>
+            <li id=nav-academy><a class=nav-academy href="https://academy.realm.io">Academy</a></li>
+            <li id=nav-language> <a href="#" class="dropdown-toggle locale-picker" data-toggle=dropdown><i class="fa fa-globe"></i><span class=caret></span></a>
+              <ul class="dropdown-menu dropdown-menu-right" role=menu>
+                <li><a class=nav-language href="https://realm.io/jp/">日本語</a></li>
+                <li><a class=nav-language href="https://realm.io/cn/">中文</a></li>
+                <li><a class=nav-language href="https://realm.io/kr/">한국어</a></li>
+                <li><a class=nav-language href="https://realm.io/">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="nav modal fullscreen" id=mobileModal tabindex=-1 role=dialog aria-labelledby=MobileMenu aria-hidden=true>
+    <div class=modal-dialog>
+      <div class=modal-content>
+        <div class="modal-header flex" style="border:0;">
+          <h3 class="modal-title col-xs-10"><a class=navbar-brand href="https://realm.io/"><img class=logo src="assets/svg/general_logo_white.svg"></a><span class=sr-only>main navigation</span></h3> <button type=button class="close btn btn-link" data-dismiss=modal aria-hidden=true><i class="fa fa-close fa-lg" style="color:#fff;"></i></button> </div>
+        <div class=modal-body>
+          <h4 class=sub>Products</h4>
+          <ul>
+            <li><a class=nav-products href="https://realm.io/products/realm-mobile-platform">Realm Mobile Platform</a></li>
+            <li><a class=nav-products href="https://realm.io/products/realm-mobile-database">Realm Mobile Database</a></li>
+          </ul>
+          <h4 class=sub>Solutions</h4>
+          <ul>
+            <li><a href="https://realm.io/solutions/realtime-collaboration">Realtime Collaboration</a></li>
+            <li><a href="https://realm.io/solutions/api-mobilization">API Mobilization</a></li>
+            <li><a href="https://realm.io/solutions/offline-first">Offline First</a></li>
+          </ul> <a class=nav-pricing href="https://realm.io/pricing"><h4>Pricing</h4></a> <a class=nav-blog href="https://blog.realm.io"><h4>Blog</h4></a> <a class=nav-academy href="https://academy.realm.io"><h4>Academy</h4></a>
+          <h4 class=sub>Docs</h4>
+          <ul>
+            <li><a class=nac-docs href="https://realm.io/docs/get-started/overview/">Get Started</a></li>
+            <li><a class=nac-docs href="https://realm.io/docs/tutorials/realmtasks/">translation missing: en.menu.tutorials</a></li>
+            <li><a class=nac-docs href="https://realm.io/docs/realm-object-server/">Realm Object Server</a></li>
+            <li><a class=nac-docs href="https://realm.io/docs/java/latest" onclick="ga('send', 'event', 'Link', 'navbar-dropdown-java', 'Nav');">Realm Java</a></li>
+            <li><a class=nac-docs href="https://realm.io/docs/objc/latest" onclick="ga('send', 'event', 'Link', 'navbar-dropdown-objc', 'Nav');">Realm Objective‑C</a></li>
+            <li><a class=nac-docs href="https://realm.io/docs/javascript/latest" onclick="ga('send', 'event', 'Link', 'navbar-dropdown-react-native', 'Nav');">Realm JavaScript</a></li>
+            <li><a class=nac-docs href="https://realm.io/docs/swift/latest" onclick="ga('send', 'event', 'Link', 'navbar-dropdown-swift', 'Nav');">Realm Swift</a></li>
+            <li><a class=nac-docs href="https://realm.io/docs/xamarin/latest" onclick="ga('send', 'event', 'Link', 'navbar-dropdown-xamarin', 'Nav');">Realm Xamarin</a></li>
+          </ul> <a class=nav-forums href="https://forums.realm.io"><h4>Forums</h4></a> <a href="https://realm.io/news"><h4>News</h4></a>
+          <h4 class=sub>Language</h4>
+          <ul>
+            <li><a class=nav-language href="https://realm.io/jp/">日本語</a></li>
+            <li><a class=nav-language href="https://realm.io/cn/">中文</a></li>
+            <li><a class=nav-language href="https://realm.io/kr/">한국어</a></li>
+            <li><a class=nav-language href="https://realm.io/">English</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main id=main>
+    <section class="col-xs-12 block_graphic">
+      <div class=container>
+        <h2 class="title text-white col-xs-12">Realm Open Source</h2>
+        <p class="white-light-text col-xs-12">At Realm, our mission is to help developers build better apps faster. We provide a unique set of tools and platform technologies designed to make it easy for developers to build apps. We could not have done this without the help of the open source
+          community and it is our mission to give back! We hope by open sourcing some of our tools, you'll also benefit!</p>
+        <div class="item col-xs-12 col-sm-4">
+          <div class=border-top-light>
+            <h2 class="title text-white">2 Billion+</h2>
+            <p class=white-light-text>Realm installs</p>
+          </div>
+        </div>
+        <div class="item col-xs-12 col-sm-4">
+          <div class=border-top-light>
+            <h2 class="title text-white">100k+</h2>
+            <p class=white-light-text>active developers</p>
+          </div>
+        </div>
+        <div class="item col-xs-12 col-sm-4">
+          <div class=border-top-light>
+            <h2 class="title text-white">36k</h2>
+            <p class=white-light-text>GitHub stars</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="block_filter col-xs-12">
+      <div class="subnav-filter flex center xs-column">
+        <div class="container flex center xs-column"> <a href="#top">Realm Top Picks</a> <a href="#demo">Demos</a> <a href="#tools">Tools/Productivity</a> <a href="#product">Product</a> </div>
+      </div>
+    </section>
+    <section class="block_products col-xs-12">
+      <div class=container>
+        <div class="article-row row">
+          <h3 class="col-xs-12 title" id=top>Realm Top Picks</h3>
+          <p class="description col-xs-12 header">These are some of the top picks from our developers.</p>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="github.com/realm/github-gantt"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_github-gantt.jpg"></a> <span class="col-xs-12 text-left"> <h4>GitHub Gantt<span class=tag>RMP</span></h4> <a class=article-source href="https://github.com/realm/github-gantt">github.com/realm/github-gantt</a>
+            <div class=article-excerpt>
+              <p>GitHub Gantt lets you generate gantt charts from GitHub Issues! Realm makes project management fun again.</p>
+            </div>
+            </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=github-gantt&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm/swiftlint"><img class="col-xs-12 article-img" src="assets/img/open-source/tools_swiftlint.jpg"></a> <span class="col-xs-12 text-left"> <h4>Swift Lint</h4> <a class=article-source href="https://github.com/realm/swiftlint">github.com/realm/swiftlint</a> <div class=article-excerpt><p>Swift Lint is a tool to enforce Swift style and conventions.</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=swiftlint&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm/realm-android-user-store"><img class="col-xs-12 article-img" src="assets/img/open-source/tools_realm-android-user-store.jpg"></a> <span class="col-xs-12 text-left"> <h4>SecureUser Store</h4> <a class=article-source href="https://github.com/realm/realm-android-user-store">github.com/realm/realm-android-user-store</a> <div class=article-excerpt><p>SecureUser Store is a utility to help developers save Realm sync credentials safely and securely on the device.</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-android-user-store&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/realm-demos/RealmContent"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_RealmContent.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm CMS<span class=tag>RMP</span></h4> <a class=article-source
+              href="https://github.com/realm-demos/RealmContent">github.com/realm-demos/RealmContent</a>
+            <div class=article-excerpt>
+              <p>A simple mobile content management system built with Realm.</p>
+            </div>
+            </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm-demos&repo=RealmContent&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+        </div>
+        <div class="article-row row">
+          <h3 class="col-xs-12 title" id=demo>Demos</h3>
+          <p class="description col-xs-12 header">A collection of useful reference applications and components built on the Realm Database and Platform.</p>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/realm/RealmPop"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_RealmPop.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Pop<span class=tag>RMP</span></h4> <a class=article-source href="https://github.com/realm/RealmPop">github.com/realm/RealmPop</a>
+            <div class=article-excerpt>
+              <p>RealmPop is multi-player game of speed. The first player to pop all their bubbles wins!</p>
+            </div>
+            </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=RealmPop&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm-demos/realm-surveys"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_realm-surveys.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Surveys<span class=tag>RMP</span></h4> <a class=article-source
+              href="https://github.com/realm-demos/realm-surveys">github.com/realm-demos/realm-surveys</a>
+            <div class=article-excerpt>
+              <p>Realm Surveys makes it easy to create and update surveys and tally the results in realtime.</p>
+            </div>
+            </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm-demos&repo=realm-surveys&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/realm-demos/realm-scanner"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_realm-scanner.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Scanner<span class=tag>RMP</span></h4> <a class=article-source
+              href="https://github.com/realm-demos/realm-scanner">github.com/realm-demos/realm-scanner</a>
+            <div class=article-excerpt>
+              <p>Realm Scanner uses IBM''s Watson to perform dynamic analysis on any scanned photos.</p>
+            </div>
+            </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm-demos&repo=realm-scanner&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/realm-demos/realm-puzzle"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_realm-puzzle.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Puzzle<span class=tag>RMP</span></h4> <a class=article-source
+              href="https://github.com/realm-demos/realm-puzzle">github.com/realm-demos/realm-puzzle</a>
+            <div class=article-excerpt>
+              <p>Realm Puzzle allows multiple players to simutaneously work together to solve a simple jigzaw puzzle.</p>
+            </div>
+            </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm-demos&repo=realm-puzzle&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/realm-demos/realm-draw"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_realm-draw.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Draw<span class=tag>RMP</span></h4> <a class=article-source
+              href="https://github.com/realm-demos/realm-draw">github.com/realm-demos/realm-draw</a>
+            <div class=article-excerpt>
+              <p>Realm Draw allows multiple users to draw, concurrently, in realtime.</p>
+            </div>
+            </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm-demos&repo=realm-draw&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm-demos/realm-tasks"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_realm-tasks.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Tasks<span class=tag>RMP</span></h4> <a class=article-source
+              href="https://github.com/realm-demos/realm-tasks">github.com/realm-demos/realm-tasks</a>
+            <div class=article-excerpt>
+              <p>A task management app that follows you on all your devices.</p>
+            </div>
+            </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm-demos&repo=realm-tasks&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm-demos/realm-inventory"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_realm-inventory.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Inventory<span class=tag>RMP</span></h4>
+            <a
+              class=article-source href="https://github.com/realm-demos/realm-inventory">github.com/realm-demos/realm-inventory</a>
+              <div class=article-excerpt>
+                <p>A sample inventory app demonstrating key features of the Realm Mobile Platform.</p>
+              </div>
+              </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm-demos&repo=realm-inventory&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/realm/github-gantt"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_github-gantt.jpg"></a> <span class="col-xs-12 text-left"> <h4>GitHub Gantt<span class=tag>RMP</span></h4> <a class=article-source
+              href="https://github.com/realm/github-gantt">github.com/realm/github-gantt</a>
+            <div class=article-excerpt>
+              <p>GitHub Gantt lets you generate gantt charts from GitHub Issues! Realm makes project management fun again.</p>
+            </div>
+            </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=github-gantt&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm-demos/RealmContent"><img class="col-xs-12 article-img" src="assets/img/open-source/demo_RealmContent.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm CMS<span class=tag>RMP</span></h4> <a class=article-source
+              href="https://github.com/realm-demos/RealmContent">github.com/realm-demos/RealmContent</a>
+            <div class=article-excerpt>
+              <p>A simple mobile content management system built with Realm.</p>
+            </div>
+            </span> <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm-demos&repo=RealmContent&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+        </div>
+        <div class="article-row row">
+          <h3 class="col-xs-12 title" id=tools>Tools/Productivity</h3>
+          <p class="description col-xs-12 header">Open source tools and add-on components that make it even easier to build applications on Realm.</p>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/realm/jazzy"><img class="col-xs-12 article-img" src="assets/img/open-source/tools_jazzy.jpg"></a> <span class="col-xs-12 text-left"> <h4>Jazzy</h4> <a class=article-source href="https://github.com/realm/jazzy">github.com/realm/jazzy</a> <div class=article-excerpt><p>Soulful docs for Swift &amp; Objective-C</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=jazzy&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm/swiftlint"><img class="col-xs-12 article-img" src="assets/img/open-source/tools_swiftlint.jpg"></a> <span class="col-xs-12 text-left"> <h4>Swift Lint</h4> <a class=article-source href="https://github.com/realm/swiftlint">github.com/realm/swiftlint</a> <div class=article-excerpt><p>Swift Lint is a tool to enforce Swift style and conventions.</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=swiftlint&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm/realm-browser-osx"><img class="col-xs-12 article-img" src="assets/img/open-source/tools_realm-browser-osx.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Browser</h4> <a class=article-source href="https://github.com/realm/realm-browser-osx">github.com/realm/realm-browser-osx</a> <div class=article-excerpt><p>Realm Browser is a Mac OS X utility to open and modify Realm database files.</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-browser-osx&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/realm/realm-cocoa-converter"><img class="col-xs-12 article-img" src="assets/img/open-source/tools_realm-cocoa-converter.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Cocoa Converter</h4> <a class=article-source href="https://github.com/realm/realm-cocoa-converter">github.com/realm/realm-cocoa-converter</a> <div class=article-excerpt><p>Realm Cocoa Converter is a library that lets you import/export Realm files from a variety of data container formats.</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-cocoa-converter&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/uPhyca/stetho-realm"><img class="col-xs-12 article-img" src="assets/img/open-source/tools_stetho-realm.jpg"></a> <span class="col-xs-12 text-left"> <h4>Stetho Realm</h4> <a class=article-source href="https://github.com/uPhyca/stetho-realm">github.com/uPhyca/stetho-realm</a> <div class=article-excerpt><p>Realm support for Stetho, the sophisticated debug bridge for Android built by Facebook.</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=uPhyca&repo=stetho-realm&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm/realm-android-user-store"><img class="col-xs-12 article-img" src="assets/img/open-source/tools_realm-android-user-store.jpg"></a> <span class="col-xs-12 text-left"> <h4>SecureUser Store</h4> <a class=article-source href="https://github.com/realm/realm-android-user-store">github.com/realm/realm-android-user-store</a> <div class=article-excerpt><p>SecureUser Store is a utility to help developers save Realm sync credentials safely and securely on the device.</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-android-user-store&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+        </div>
+        <div class="article-row row">
+          <h3 class="col-xs-12 title" id=product>Product</h3>
+          <p class="description col-xs-12 header">Production scale products we've built and open sourced for the community, including the Realm Mobile Database which 100k+ developers depend upon to power their apps.</p>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/realm/realm-core"><img class="col-xs-12 article-img" src="assets/img/open-source/product_realm-core.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Core</h4> <a class=article-source href="https://github.com/realm/realm-core">github.com/realm/realm-core</a> <div class=article-excerpt><p>realm-core is a core database component for the Realm Mobile Database SDKs.</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-core&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm/realm-object-store"><img class="col-xs-12 article-img" src="assets/img/open-source/product_realm-object-store.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Object Store</h4> <a class=article-source href="https://github.com/realm/realm-object-store">github.com/realm/realm-object-store</a> <div class=article-excerpt><p>realm-object-store is a collection of cross-platform abstractions used within Realm products.</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-object-store&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column"> <a href="https://github.com/realm/realm-cocoa"><img class="col-xs-12 article-img" src="assets/img/open-source/product_realm-cocoa.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Cocoa</h4> <a class=article-source href="https://github.com/realm/realm-cocoa">github.com/realm/realm-cocoa</a> <div class=article-excerpt><p>Realm Cocoa Library</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-cocoa&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm/realm-java"><img class="col-xs-12 article-img" src="assets/img/open-source/product_realm-java.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Java</h4> <a class=article-source href="https://github.com/realm/realm-java">github.com/realm/realm-java</a> <div class=article-excerpt><p>Realm Android Library</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-java&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm/realm-dotnet"><img class="col-xs-12 article-img" src="assets/img/open-source/product_realm-dotnet.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm Xamarin</h4> <a class=article-source href="https://github.com/realm/realm-dotnet">github.com/realm/realm-dotnet</a> <div class=article-excerpt><p>Realm Xamarin Library</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-dotnet&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm/realm-js"><img class="col-xs-12 article-img" src="assets/img/open-source/product_realm-js.jpg"></a> <span class="col-xs-12 text-left"> <h4>Realm JavaScript</h4> <a class=article-source href="https://github.com/realm/realm-js">github.com/realm/realm-js</a> <div class=article-excerpt><p>Realm JavaScript Library</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-js&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+          <div class="card col-xs-12 col-sm-3 flex center column">
+            <a href="https://github.com/realm/realm-android-adapters"><img class="col-xs-12 article-img" src="assets/img/open-source/product_realm-android-adapters.jpg"></a> <span class="col-xs-12 text-left"> <h4>Java Realm Adapters</h4> <a class=article-source href="https://github.com/realm/realm-android-adapters">github.com/realm/realm-android-adapters</a> <div class=article-excerpt><p>RecyclerView and ListView Adapter Support</p> </div> </span>            <span class="count col-xs-12 text-left"> <iframe src="https://ghbtns.com/github-btn.html?user=realm&repo=realm-android-adapters&type=star&count=true&size=large&v=2" frameborder=0 scrolling=0 width=160px height=30px></iframe> </span> </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="block_code_wave col-xs-12"> <svg width="100%" viewBox="0 0 1000 29" version="1.1" preserveAspectRatio=none> <defs></defs> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <g id=FooterWave transform="translate(0.000000, -424.000000)" fill="#EBEBF2"> <path d="M1024,452.25271 C1024,452.25271 1024,452.252711 1024,431 C978.405999,427.397902 869.678254,419.256709 671,428 C510.632812,435.114797 388.21875,437.373804 266.320313,437.373804 C144.421875,437.373805 0,428.557398 0,428.557398 L0,452.25271 L1024,452.25271 Z" id=footerBlueTop></path> </g> </g> </svg>    </div>
+  <footer class="footer col-xs-12">
+    <div class="grid container">
+      <div class="col-xs-12 col-sm-3">
+        <ul class="footer-links flex column">
+          <p class=footer-header>Products<img src="assets/svg/general/footer_arrow_down.svg"></p>
+          <li class=light-text><a href="https://realm.io/products/realm-mobile-platform">Realm Mobile Platform</a></li>
+          <li class=light-text><a href="https://realm.io/products/realm-mobile-database">Realm Mobile Database</a></li> <br/>
+          <p class=footer-header><a href="https://realm.io/pricing">Pricing</a></p> <br/>
+          <p class=footer-header>Solutions<img src="assets/svg/general/footer_arrow_down.svg"></p>
+          <li class=light-text> <a href="https://realm.io/solutions/realtime-collaboration">Realtime Collaboration</a> </li>
+          <li class=light-text> <a href="https://realm.io/solutions/api-mobilization">API Mobilization</a> </li>
+          <li class=light-text> <a href="https://realm.io/solutions/offline-first">Offline First</a> </li>
+          <li class=light-text> <a href="https://realm.io/addons">Add-ons</a> </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <ul class="footer-links flex column">
+          <a href="https://realm.io/docs/">
+            <p class=footer-header>Docs<img src="assets/svg/general/footer_arrow_down.svg"></p>
+          </a>
+          <li class=light-text> <a href="https://realm.io/docs/get-started/installation/mac/">Realm Mobile Platform</a> </li>
+          <li class=light-text> <a href="https://realm.io/docs/realm-object-server/">Realm Object Server</a> </li>
+          <li class=light-text> <a href="https://realm.io/docs/java/latest">Java</a> </li>
+          <li class=light-text> <a href="https://realm.io/docs/objc/latest">Objective‑C</a> </li>
+          <li class=light-text> <a href="https://realm.io/docs/javascript/latest">JavaScript</a> </li>
+          <li class=light-text> <a href="https://realm.io/docs/swift/latest">Swift</a> </li>
+          <li class=light-text> <a href="https://realm.io/docs/xamarin/latest">Xamarin</a> </li> <br/>
+          <a href="https://realm.io/support">
+            <p class=footer-header>Support<img src="assets/svg/general/footer_arrow_down.svg"></p>
+          </a>
+          <li class=light-text> <a href="https://realm.io/support">Overview</a> </li>
+          <li class=light-text> <a href="https://forums.realm.io">Forums</a> </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-3 footer-links">
+        <p class=footer-header><a href="https://blog.realm.io">Blog</a></p> <br/>
+        <p class=footer-header><a href="https://academy.realm.io">Academy</a></p> <br/>
+        <p class=footer-header>Communities<img src="assets/svg/general/footer_arrow_down.svg"></p>
+        <ul class="footer-links flex column">
+          <li class=light-text> <a href="https://realm.io/communities/java">Java</a> </li>
+          <li class=light-text> <a href="https://realm.io/communities/objective-c">Objective‑C</a> </li>
+          <li class=light-text> <a href="https://realm.io/communities/react-native">JavaScript</a> </li>
+          <li class=light-text> <a href="https://realm.io/communities/swift">Swift</a> </li>
+          <li class=light-text> <a href="https://realm.io/communities/xamarin">Xamarin</a> </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <p class=footer-header>Company<img src="assets/svg/general/footer_arrow_down.svg"></p>
+        <ul class="footer-links flex column">
+          <li class=light-text> <a href="https://realm.io/about">About Realm</a> </li>
+          <li class=light-text> <a href="https://realm.io/jobs">Jobs</a> </li>
+          <li class=light-text> <a href="https://realm.io/press">Press</a> </li>
+          <li class=light-text> <a href="https://realm.io/legal">Legal</a> </li>
+          <li class=light-text> <a href="https://realm.io/contact/">Contact</a> </li>
+          <li class="col-xs-12 footer-sub"> <span class=subscribe-subtext>Subscribe for updates</span>
+            <div id=mc_embed_signup class=email-container>
+              <form action="https://go.pardot.com/l/210132/2016-08-22/gjk" method=post class=validate>
+                <div class="input-group input-group-lg"> <input type=email value="" name=email class="required email form-control home-newsletter-email-input" placeholder="Enter your email"> <span class=input-group-btn> <button type=submit name=subscribe class="btn btn-primary btn-subscribe">Go</button> </span>                  </div>
+              </form>
+            </div>
+            <ul class="social footer-links flex center xs-column">
+              <li class="social col-xs-2"> <a class="flex center column col-xs-12" href="https://github.com/realm" title=GitHub> <svg width=25px height=25px viewBox="0 0 25 25" class="footer-icon github"> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <path d="M1,12.5 C1,17.5810833 4.29475,21.8916667 8.86504167,23.4125417 C9.43908333,23.5189167 9.625,23.1624167 9.625,22.8595833 L9.625,20.7186667 C6.42608333,21.4144167 5.76004167,19.3616667 5.76004167,19.3616667 C5.23679167,18.0324583 4.48258333,17.6788333 4.48258333,17.6788333 C3.43895833,16.964875 4.562125,16.9802083 4.562125,16.9802083 C5.71691667,17.0607083 6.3245,18.1656667 6.3245,18.1656667 C7.34991667,19.92325 9.01454167,19.4153333 9.671,19.121125 C9.77354167,18.3784167 10.0715833,17.8705 10.40125,17.5839583 C7.84729167,17.2916667 5.16204167,16.3055417 5.16204167,11.9000833 C5.16204167,10.6437083 5.6115,9.61829167 6.34654167,8.81329167 C6.22770833,8.52291667 5.83383333,7.35279167 6.45866667,5.769625 C6.45866667,5.769625 7.42466667,5.46104167 9.622125,6.948375 C10.53925,6.69345833 11.5225,6.566 12.5,6.56120833 C13.4775,6.566 14.4617083,6.69345833 15.38075,6.948375 C17.5762917,5.46104167 18.540375,5.769625 18.540375,5.769625 C19.1661667,7.35375 18.7722917,8.523875 18.6534583,8.81329167 C19.391375,9.61829167 19.837,10.6446667 19.837,11.9000833 C19.837,16.3170417 17.1469583,17.28975 14.5862917,17.574375 C14.998375,17.930875 15.375,18.6304583 15.375,19.7037917 L15.375,22.8595833 C15.375,23.1652917 15.559,23.5246667 16.142625,23.4115833 C20.7090833,21.8887917 24,17.5791667 24,12.5 C24,6.149125 18.850875,1 12.5,1 C6.15008333,1 1,6.149125 1,12.5 Z" id=GitHub fill="#1C233F"></path> </g> </svg> </a>                </li>
+              <li class="social col-xs-2"> <a class="flex center column col-xs-12" href="https://twitter.com/realm" title=Twitter> <svg width=25px height=25px viewBox="0 0 25 25" class="footer-icon twitter"> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <path d="M24,5.42915 C23.1537917,5.80155 22.2443333,6.05235 21.2898333,6.1654 C22.2644583,5.58685 23.0129167,4.6701 23.364625,3.5776 C22.45325,4.1134 21.4431667,4.5029 20.3679167,4.71285 C19.5082917,3.8037 18.2806667,3.2356 16.9236667,3.2356 C13.877125,3.2356 11.6384583,6.0533 12.3265417,8.97835 C8.406,8.7836 4.92916667,6.9216 2.601375,4.09155 C1.365125,6.1939 1.96025,8.94415 4.06091667,10.33685 C3.2885,10.31215 2.56016667,10.1022 1.92479167,9.75165 C1.87304167,11.9186 3.43991667,13.9459 5.70925,14.39715 C5.045125,14.57575 4.31775,14.61755 3.57791667,14.47695 C4.17783333,16.33515 5.92008333,17.687 7.98625,17.725 C6.0025,19.26685 3.50316667,19.9556 1,19.663 C3.08820833,20.99015 5.56933333,21.7644 8.2335,21.7644 C16.9945833,21.7644 21.944375,14.42945 21.645375,7.8507 C22.5672917,7.19045 23.3675,6.3668 24,5.42915 L24,5.42915 Z" id=Twitter fill="#1C233F"></path> </g> </svg> </a>                </li>
+              <li class="social col-xs-2"> <a class="flex center column col-xs-12" href="https://plus.google.com/+RealmPlatform" title="Google+"> <svg width=25px height=25px viewBox="0 0 25 25" class="footer-icon google-plus"> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <g id=iconmonstr-google-plus-4 fill="#1C233F"> <path d="M12.5,0 C5.596875,0 0,5.596875 0,12.5 C0,19.403125 5.596875,25 12.5,25 C19.403125,25 25,19.403125 25,12.5 C25,5.596875 19.403125,0 12.5,0 L12.5,0 Z M9.46145833,16.753125 C7.109375,16.753125 5.20833333,14.8520833 5.20833333,12.5 C5.20833333,10.1479167 7.109375,8.246875 9.46145833,8.246875 C10.6104167,8.246875 11.5697917,8.665625 12.3104167,9.35833333 L11.1572917,10.4708333 C10.840625,10.1666667 10.2885417,9.81458333 9.46145833,9.81458333 C8.009375,9.81458333 6.825,11.0177083 6.825,12.5010417 C6.825,13.984375 8.01041667,15.1875 9.46145833,15.1875 C11.1447917,15.1875 11.778125,13.9770833 11.8739583,13.3520833 L9.46145833,13.3520833 L9.46145833,11.89375 L13.4770833,11.89375 C13.5145833,12.10625 13.54375,12.31875 13.54375,12.5989583 C13.5447917,15.028125 11.915625,16.753125 9.46145833,16.753125 L9.46145833,16.753125 Z M19.7916667,13.1072917 L17.96875,13.1072917 L17.96875,14.9302083 L16.753125,14.9302083 L16.753125,13.1072917 L14.9302083,13.1072917 L14.9302083,11.8927083 L16.753125,11.8927083 L16.753125,10.0697917 L17.96875,10.0697917 L17.96875,11.8927083 L19.7916667,11.8927083 L19.7916667,13.1072917 L19.7916667,13.1072917 Z" id=Shape></path> </g> </g> </svg> </a>                </li>
+              <li class="social col-xs-2"> <a class="flex center column col-xs-12" href="https://www.facebook.com/Realm-655569387879379/" title=Facebook> <svg width=25px height=25px viewBox="0 0 25 25" class="footer-icon facebook"> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <g id=F_icon transform="translate(1.000000, 1.000000)" fill="#1C233F"> <g id=Layer_1> <path d="M21.6752355,22.9384595 C22.372695,22.9384595 22.9382819,22.3728726 22.9382819,21.6752355 L22.9382819,1.31535135 C22.9382819,0.617625483 22.3727838,0.0522162162 21.6752355,0.0522162162 L1.31535135,0.0522162162 C0.617625483,0.0522162162 0.0522162162,0.617625483 0.0522162162,1.31535135 L0.0522162162,21.6752355 C0.0522162162,22.3727838 0.61753668,22.9384595 1.31535135,22.9384595 L21.6752355,22.9384595 Z M15.8432703,22.9384595 L15.8432703,14.0756448 L18.8180849,14.0756448 L19.2635212,10.6216486 L15.8432703,10.6216486 L15.8432703,8.41649035 C15.8432703,7.41647876 16.1209575,6.73500386 17.5549498,6.73500386 L19.3839382,6.73420463 L19.3839382,3.64492278 C19.0676216,3.60283012 17.9819151,3.50878764 16.7187799,3.50878764 C14.0817722,3.50878764 12.2764054,5.11843243 12.2764054,8.07442085 L12.2764054,10.6216486 L9.29395367,10.6216486 L9.29395367,14.0756448 L12.2764054,14.0756448 L12.2764054,22.9384595 L15.8432703,22.9384595 Z" id=Combined-Shape></path> </g> </g> </g> </svg> </a>                </li>
+              <li class="social col-xs-2"> <a class="flex center column col-xs-12" href="https://www.linkedin.com/company/realm-inc" title=LinkedIn> <svg width=25px height=24px viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id=Page-1 stroke=none stroke-width=1 fill=none fill-rule=evenodd> <g id=linkedin fill-rule=nonzero fill="#1C233F"> <path d="M5.1875,2.60416667 C5.1875,4.04270833 4.03125,5.20833333 2.60416667,5.20833333 C1.17708333,5.20833333 0.0208333333,4.04270833 0.0208333333,2.60416667 C0.0208333333,1.16666667 1.17708333,0 2.60416667,0 C4.03125,0 5.1875,1.16666667 5.1875,2.60416667 Z M5.20833333,7.29166667 L0,7.29166667 L0,23.9583333 L5.20833333,23.9583333 L5.20833333,7.29166667 Z M13.5229167,7.29166667 L8.34791667,7.29166667 L8.34791667,23.9583333 L13.5239583,23.9583333 L13.5239583,15.209375 C13.5239583,10.3447917 19.8041667,9.946875 19.8041667,15.209375 L19.8041667,23.9583333 L25,23.9583333 L25,13.4052083 C25,5.196875 15.70625,5.49583333 13.5229167,9.53645833 L13.5229167,7.29166667 Z" id=logo></path> </g> </g> </svg> </a>                </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 realm-inc">
+        <div class=col-xs-12>
+          <div class=row> Realm: Build Better Apps Faster <br> © <a href="https://realm.io//realm.io" :>Realm</a> 2014-2017, all rights reserved. </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    _linkedin_data_partner_id = "10114";
+  </script>
+  <script>
+    (function() {
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript";
+      b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+    })();
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('form.validate').each(function(index, form) {
+        var action = $(form).attr('action');
+        var component = 'w=1';
+        var combiner = document.location.href.includes('?') ? '&' : '?'
+        var success_location = encodeURIComponent(document.location.href + combiner + component);
+        $(form).attr('action', action + '?success_location=' + success_location);
+      });
+
+      // Add subscribed text when subscribed
+      var url = window.location.href;
+      var msgSubscribed = document.getElementsByClassName('js-top-banner');
+      if (url.match(/w=(1)/)) {
+        $(msgSubscribed).show()
+        setTimeout(function() {
+          $(msgSubscribed).animate({
+            "height": 0
+          }, 500, function() {
+            $(msgSubscribed).hide();
+          });
+        }, 5000);
+      }
+    });
+  </script>
+</body>
+
+</html>

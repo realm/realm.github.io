@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Custom Preset</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Custom-Preset" fill="#2C8AF7">
+            <g id="Play">
+                <circle id="Oval" fill-opacity="0.1" cx="17.5" cy="17.5" r="17.5"></circle>
+                <path d="M25.2450351,19.201596 L14.0509858,26.1155676 L14.0509858,26.1155676 C13.1112202,26.696011 11.8788474,26.4047229 11.298404,25.4649574 C11.1033234,25.1491126 11,24.7852052 11,24.4139716 L11,10.5860284 L11,10.5860284 C11,9.48145888 11.8954305,8.58602838 13,8.58602838 C13.3712336,8.58602838 13.735141,8.68935179 14.0509858,8.88443238 L25.2450351,15.798404 L25.2450351,15.798404 C26.1848006,16.3788474 26.4760887,17.6112202 25.8956453,18.5509858 C25.732286,18.8154722 25.5095215,19.0382367 25.2450351,19.201596 Z" id="Triangle"></path>
+            </g>
+        </g>
+    </g>
+</svg>

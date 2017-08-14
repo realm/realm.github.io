@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="183px" height="176px" viewBox="0 0 183 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="92.99999" cy="88.967024" rx="82.499997" ry="77.967025"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-7" y="-7" width="178.999994" height="169.93405">
+            <rect x="3.499993" y="3.999999" width="178.999994" height="169.93405" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="svg_1">
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <use stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="14" xlink:href="#path-1"></use>
+            <use stroke="#9A50A5" stroke-width="5" xlink:href="#path-1"></use>
+        </g>
+        <path d="M13.5,89.151512 C13.5,47.631351 49.301109,14 93.5,14 C137.698914,14 173.5,47.631351 173.5,89.151512 C173.5,130.671676 137.698914,164.303039 93.5,164.303039 C49.301109,164.303039 13.5,130.671676 13.5,89.151512 L13.5,89.151512 Z" id="svg_20" stroke="#9A50A5" stroke-width="2" fill="#FFFFFF"></path>
+        <path d="M19.43642,89.208992 C19.43642,50.97197 52.34291,20 92.968208,20 C133.593506,20 166.5,50.97197 166.5,89.208992 C166.5,127.445999 133.593506,158.417984 92.968208,158.417984 C52.342918,158.417984 19.43642,127.445999 19.43642,89.208992 Z" id="svg_5" stroke="#9A50A5" stroke-width="2" fill="#FFFFFF"></path>
+        <circle id="svg_40" stroke="#9A50A5" stroke-width="5" fill="#FFFFFF" cx="91.999996" cy="88.499998" r="47.691406"></circle>
+        <circle id="svg_41" stroke="#9A50A5" stroke-width="2" fill="#FFFFFF" cx="92" cy="88.5" r="38.640625"></circle>
+        <polygon id="svg_2" stroke="#9A50A5" stroke-width="2" fill="#FFFFFF" points="14.8408772 102.724517 161.424858 46.2285902 172.584613 75.1836211 26.0006321 131.679548"></polygon>
+        <text id="svg_14" fill="#9A50A5" transform="translate(95.095694, 88.657428) rotate(-19.914400) translate(-95.095694, -88.657428) " font-family="Arial-BoldMT, Arial" font-size="26" font-weight="bold">
+            <tspan x="27.5956936" y="97.2321346">SOLD OUT</tspan>
+        </text>
+        <text id="svg_42" fill="#FFFFFF" font-family="Arial-Black, Arial Black" font-size="22" font-weight="700">
+            <tspan x="58" y="88">*</tspan>
+        </text>
+        <text id="svg_43" fill="#FFFFFF" font-family="Arial-Black, Arial Black" font-size="22" font-weight="700">
+            <tspan x="74.5" y="72">*</tspan>
+        </text>
+        <text id="svg_44" fill="#FFFFFF" font-family="Arial-Black, Arial Black" font-size="22" font-weight="700">
+            <tspan x="99.5" y="71">*</tspan>
+        </text>
+        <text id="svg_45" fill="#FFFFFF" font-family="Arial-Black, Arial Black" font-size="22" font-weight="700">
+            <tspan x="72.5" y="130">*</tspan>
+        </text>
+        <text id="svg_46" fill="#FFFFFF" font-family="Arial-Black, Arial Black" font-size="22" font-weight="700">
+            <tspan x="113.5" y="114">*</tspan>
+        </text>
+        <text id="svg_48" stroke="#9A50A5" fill="#9A50A5" transform="translate(31.962644, 81.328613) rotate(-87.878800) translate(-31.962644, -81.328613) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="25.4626439" y="87.5178215">S</tspan>
+        </text>
+        <text id="svg_52" stroke="#9A50A5" fill="#9A50A5" transform="translate(37.682873, 64.415539) rotate(-72.878800) translate(-37.682873, -64.415539) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="30.1828732" y="70.6047476">O</tspan>
+        </text>
+        <text id="svg_53" stroke="#9A50A5" fill="#9A50A5" transform="translate(48.250421, 48.402405) rotate(-50.601300) translate(-48.250421, -48.402405) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="42.7504214" y="54.5916136">L</tspan>
+        </text>
+        <text id="svg_55" stroke="#9A50A5" fill="#9A50A5" transform="translate(63.056865, 36.339159) rotate(-40.167900) translate(-63.056865, -36.339159) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="56.0568649" y="42.5283682">D</tspan>
+        </text>
+        <text id="svg_56" stroke="#9A50A5" fill="#9A50A5" transform="translate(94.547333, 29.900954) rotate(-5.167900) translate(-94.547333, -29.900954) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="87.0473331" y="36.0901631">O</tspan>
+        </text>
+        <text id="svg_57" stroke="#9A50A5" fill="#9A50A5" transform="translate(114.380707, 34.339876) rotate(24.832100) translate(-114.380707, -34.339876) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="107.380707" y="40.5290849">U</tspan>
+        </text>
+        <text id="svg_58" stroke="#9A50A5" fill="#9A50A5" transform="translate(130.471636, 43.863752) rotate(49.832100) translate(-130.471636, -43.863752) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="124.471636" y="50.052961">T</tspan>
+        </text>
+        <text id="svg_59" stroke="#9A50A5" fill="#9A50A5" transform="translate(58.380665, 138.339867) rotate(24.832100) translate(-58.380665, -138.339867) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="51.8806655" y="144.529076">S</tspan>
+        </text>
+        <text id="svg_61" stroke="#9A50A5" fill="#9A50A5" transform="translate(74.499517, 145.809819) rotate(-0.167900) translate(-74.499517, -145.809819) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="66.9995168" y="151.999028">O</tspan>
+        </text>
+        <text id="svg_66" stroke="#9A50A5" fill="#9A50A5" transform="translate(92.464393, 149.732119) rotate(4.426500) translate(-92.464393, -149.732119) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="86.9643928" y="155.921328">L</tspan>
+        </text>
+        <text id="svg_67" stroke="#9A50A5" fill="#9A50A5" transform="translate(110.663801, 146.051623) rotate(-15.167900) translate(-110.663801, -146.051623) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="103.663801" y="152.240832">D</tspan>
+        </text>
+        <text id="svg_68" stroke="#9A50A5" fill="#9A50A5" transform="translate(137.058357, 131.337899) rotate(-40.167900) translate(-137.058357, -131.337899) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="129.558357" y="137.527108">O</tspan>
+        </text>
+        <text id="svg_69" stroke="#9A50A5" fill="#9A50A5" transform="translate(149.790658, 115.626953) rotate(-55.167900) translate(-149.790658, -115.626953) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="142.790658" y="121.816162">U</tspan>
+        </text>
+        <text id="svg_70" stroke="#9A50A5" fill="#9A50A5" transform="translate(156.114032, 98.045263) rotate(-60.167900) translate(-156.114032, -98.045263) " font-family="ArialMT, Arial" font-size="19" font-weight="normal">
+            <tspan x="150.114032" y="104.234472">T</tspan>
+        </text>
+    </g>
+</svg>
